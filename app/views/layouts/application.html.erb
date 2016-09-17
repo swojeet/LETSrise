@@ -29,8 +29,8 @@
 		            <span class="nav_links pull-right"><%= link_to 'New Post', new_post_path %></span>
 		            <span class="nav_links pull-right"><%= link_to 'Edit Settings', edit_user_registration_path %></span>
 		            <span class="nav_links pull-right"><%= link_to 'Log out', destroy_user_session_path, method: :delete %></span>
-					<a href="#">All Problems</a>
-					<a href="#">Post Problem</a>
+					     <a href="#">All Problems</a>
+					     <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#myModal">New Post</button>
 		        <% else %>
 		            <%= link_to 'Sign up', new_user_registration_path, class: 'nav_links pull-right' %>
 		            <%= link_to 'Log in', new_user_session_path, class: 'nav_links pull-right' %>
