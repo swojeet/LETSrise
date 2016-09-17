@@ -1,6 +1,6 @@
 .navbar-default {
-  background-color: #D7FFF1;
-  border: 1px solid #D7FFF1;
+  background-color: #8CD790;
+  border: 1px solid #8CD790;
 }
 
 .navbar-default {
@@ -9,37 +9,9 @@
   }
 }
 
-.posts {
-  border:1px solid #D9D4CF;
-  width: auto;
-  border-radius: 4px;
+.navbar-default .navbar-brand {
+  color:#337ab7;
 }
-
-.post-header {
-  height: 40px;
-  background-color: #8CD790;
-}
-
-.post-header p {
-  padding:2% 0 0 1%;
-}
-
-.post-content {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.post-footer {
-  height: 40px;
-}
-
-.help-me {
-  background-color: #77AF9C;
-  color: #FFFFFF;
-}
-
-
-
 
 
 /* Styles go here */
@@ -67,6 +39,8 @@ body {
 #footer {
   height: 120px;
   background-color: #285943;
+  padding:10px 0 0 0;
+  color:#FFF;
 }
 
 
