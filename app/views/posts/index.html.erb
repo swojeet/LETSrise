@@ -1,15 +1,20 @@
-<div class="col-md-3"></div>
-<div class="col-md-6">
-  <div class="posts">
-    <div class="post-header text-center">
-      <p>Rabin Gaire</p>
+<% @posts.each do |post| %>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="posts">
+        <div class="panel-heading text-center">
+          <%= link_to post.user.name, user_path(post.user_id), class: 'bold_black' %>
+
+        </div>
+        <div class="panel-body text-center">
+          <%= link_to post.user.name, user_path(post.user_id), class: 'bold_black' %>
+          <%= post.description %>
+          <%= link_to 'View Post', post_path(post.id),class: 'bold_black pull-right' %>
+        </div>
+        <div class="panel-footer text-right">
+          <input type="button" class="btn btn-default help-me" value="Let's Help"/>
+        </div>
+      </div>
     </div>
-    <div class="post-content text-center">
-      <p>I am sad :(</p>
-    </div>
-    <div class="post-footer text-center">
-      <input type="button" class="btn btn-default help-me" value="Let's Help"/>
-    </div>
-  </div>
-</div>
-<div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+<% end %>
