@@ -15,10 +15,17 @@
     
     <div class="tools">
     <% if post.user == current_user %>
-      <%= link_to 'Edit Post', edit_post_path(post.id),id: 'options',class: 'bold_black' %>
-      <%= link_to 'Delete Post', post_path(post.id), method: :delete,id: 'options',class: 'bold_black' %>
+      <%= link_to 'Edit Post', edit_post_path(post.id),id: 'options',class: 'bold_black col-md-5' %>
+      <%= link_to 'Delete Post', post_path(post.id), method: :delete,id: 'options',class: 'bold_black col-md-5' %>
+      <!-- code below this is just a prototype -->
+      <input type="button" class="btn btn-primary col-md-2" value="Let's Help">
     <% end %>
     </div>
+    <form class="comment">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Comment...">
+      </div>
+    </form>
   </div>
 </div>
 
