@@ -1,0 +1,70 @@
+.navbar-default {
+  background-color: #D7FFF1;
+  border: 1px solid #D7FFF1;
+}
+
+.navbar-default {
+  .navbar-toggle:hover {
+    background-color: transparent;
+  }
+}
+
+.posts {
+  border:1px solid #D9D4CF;
+  width: auto;
+  border-radius: 4px;
+}
+
+.post-header {
+  height: 40px;
+  background-color: #8CD790;
+}
+
+.post-header p {
+  padding:2% 0 0 1%;
+}
+
+.post-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.post-footer {
+  height: 40px;
+}
+
+.help-me {
+  background-color: #77AF9C;
+  color: #FFFFFF;
+}
+
+
+
+
+
+/* Styles go here */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -120px;
+  /* Pad bottom by footer height */
+  padding: 0 0 120px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 120px;
+  background-color: #285943;
+}
