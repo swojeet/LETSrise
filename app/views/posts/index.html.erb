@@ -1,20 +1,4 @@
-<!-- <div class="post_box">
-        <div class="posts">
-          <% @posts.each do |post| %>
-          <div class="panel-heading text-center">
-            <%= link_to post.user.name, user_path(post.user_id), class: 'bold_black' %>
-          </div>
-          <div class="panel-body text-center">
-            <%= post.description %>
-            <%= link_to 'View Post', post_path(post.id),class: 'bold_black pull-right' %>
-          </div>
-          <div class="panel-footer text-right">
-            <input type="button" class="btn btn-default help-me" value="Let's Help"/>
-          </div>
-        </div>
-      </div>
-  <% end %>
-</div> -->
+
 
 <% @posts.each do |post| %>
 <div class="post">
@@ -28,11 +12,13 @@
     <div class="post_body">
       <%= post.description %>
     </div>
-
+    
+    <div class="tools">
     <% if post.user == current_user %>
       <%= link_to 'Edit Post', edit_post_path(post.id),id: 'options',class: 'bold_black' %>
       <%= link_to 'Delete Post', post_path(post.id), method: :delete,id: 'options',class: 'bold_black' %>
     <% end %>
+    </div>
   </div>
 </div>
 
