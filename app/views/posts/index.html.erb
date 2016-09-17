@@ -27,7 +27,6 @@
     </div>
     <div class="post_body">
       <%= post.description %>
-      <%= link_to 'View Post', post_path(post.id),class: 'bold_black pull-right' %>
     </div>
 
     <% if post.user == current_user %>

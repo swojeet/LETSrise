@@ -1,0 +1,8 @@
+<div class="post_box"> 
+	<h1 id="heading">Edit Post</h1>
+
+	<%= simple_form_for @post do |f| %>
+		<%= f.input :description %>
+		<%= f.submit 'Update', class: 'btn btn-default btn-block',id:'post_button' %>
+	<% end %>
+</div>
